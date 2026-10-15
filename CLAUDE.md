@@ -1,6 +1,6 @@
 # CLAUDE.md - Claude Code Agent Guidance
 
-This repository contains the clean-room, production-grade reverse-engineered **Claude Design System (CDS)** and its interaction physics.
+This repository is a UI share: React components, design tokens (the **Claude Design System, CDS**), and interaction-motion details inspired by the Claude desktop app.
 
 ## Core Reference
 All architectural guidelines, design tokens, spring presets, component directories, and invariant rules are defined in **[`AGENTS.md`](AGENTS.md)**. Always refer to `AGENTS.md` before implementing or modifying UI components or motion behaviors.

@@ -1,6 +1,6 @@
 # Agent Guidelines for Claude Design System (CDS)
 
-Welcome, AI Agent! This repository ([`open-claude-ui`](https://github.com/Caho1/open-claude-ui)) contains the production-grade, clean-room reverse-engineered implementation of Anthropic's **Claude Design System (CDS)** and its interaction physics.
+Welcome, AI Agent! This repository ([`open-claude-ui`](https://github.com/Caho1/open-claude-ui)) is a UI share: React components, design tokens (the **Claude Design System, CDS**), and interaction-motion details inspired by the Claude desktop app.
 
 When assisting users with building, modifying, or reviewing frontend components, interfaces, or animations based on this repository, you **MUST** strictly follow the design tokens, physics laws, component guidelines, and quality gates detailed below.
 

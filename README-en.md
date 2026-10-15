@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Production-grade, clean-room reverse-engineered implementation of the Claude Design System (CDS) and interaction physics.</strong>
+  <strong>A React UI share inspired by the Claude desktop app: design tokens, component code, and interaction-motion details.</strong>
 </p>
 
 <p align="center">
@@ -14,8 +14,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
-  <a href="https://github.com/morluto/rea"><img src="https://img.shields.io/badge/Reverse%20Engineered%20with-REA-ea580c?logo=github" alt="Reverse Engineered with REA" /></a>
-  <a href="assets/README.md"><img src="https://img.shields.io/badge/assets-clean--room%20compliance-success" alt="Asset Compliance" /></a>
+  <a href="assets/README.md"><img src="https://img.shields.io/badge/assets-no%20proprietary%20binaries-success" alt="Asset Policy" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.5+-blue?logo=typescript" alt="TypeScript" /></a>
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React" /></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-3.4+-38B2AC?logo=tailwind-css" alt="TailwindCSS" /></a>
@@ -26,17 +25,15 @@
 
 ## 📖 Introduction
 
-`open-claude-ui` is a high-fidelity open-source UI component library and motion physics engine, built through in-depth clean-room reverse engineering of the modern desktop AI client.
+`open-claude-ui` is a **UI sharing project**: 30 standalone React components and motion hooks built around warm clay tones, restrained interaction physics, and careful details in the composer, scrolling, and drag-and-drop. It is meant as a reference and a copy-paste starting point for AI chat style interfaces.
 
-All reverse derivation, de-obfuscation static analysis, and ASAR package deconstruction were conducted using the advanced multi-platform reverse engineering framework **[REA (Reverse Engineer Anything)](https://github.com/morluto/rea)**. Leveraging REA's static AST deconstruction, closure de-obfuscation, and runtime tracing capabilities, we penetrated production bundles to faithfully extract the underlying physical constants, interaction constraints, and mathematical models.
-
-Unlike superficial visual approximations or guesswork replicas, every component specification, damping constant, shader keyframe, and audio pipeline in this project has been **rigorously verified against decompiled production front-end architecture**:
+Component specs, motion parameters, keyframes, and the audio pipeline are all organized as readable, reusable code and docs:
 * **Editorial Warmth**: Signature Clay orange (`#d97757`), a 4-tier micro-contrast surface ladder (Surfaces 0 to 3), and Retina subpixel hairline compensation rings;
 * **Rigorous Interaction Physics**: 4 production-tuned spring physics presets, 4px pointer movement deadzones, CJK IME composition guards, and 7-stop non-linear alpha fade masks;
 * **Audiovisual & Desktop Architecture**: Zero-latency procedural audio synthesis via Web Audio API oscillators, cursor-anchored gallery pan/zoom affine transformations, macOS vibrancy glass fusion, and Cowork multi-agent orchestration topologies.
 
-> ⚖️ **Copyright & Asset Compliance (DMCA & Assets Policy)**:  
-> This open-source repository **does not distribute any proprietary binary assets** (including commercial `.ttf` fonts and recorded `.mp3` audio). We provide native system font fallback stacks and procedural Web Audio synthesis algorithms, ensuring a completely self-contained, legal, and clean-room compliant codebase. For details, see [assets/README.md](assets/README.md).
+> ⚖️ **Unofficial Notice & Asset Policy**:  
+> This is an unofficial UI share and is not affiliated with or endorsed by Anthropic, PBC. Claude and related names and marks belong to their respective owners. This repository **does not distribute any proprietary binary assets** (including commercial `.ttf` fonts and recorded `.mp3` audio). It ships native system font fallback stacks and procedural Web Audio synthesis, so it is fully self-contained. For details, see [assets/README.md](assets/README.md).
 
 ---
 
@@ -58,15 +55,15 @@ graph TD
 1. **30 Production-Grade Independent Modules**: 11 atomic UI components + 19 deep architecture physics modules and React Hooks. Copy-paste ready with zero black-box dependencies.
 2. **Native System Typography & Procedural Audio**: Engineered system font fallback stacks and zero-latency Web Audio oscillator synthesis engines.
 3. **Interactive Offline Storybook Preview**: Single-file offline storybook previewable directly in any browser without spinning up local dev servers.
-4. **Complete 7-Part Technical Engineering Manual**: Accompanied by a 3,000+ line reverse engineering manual: [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md).
+4. **Complete 7-Part Technical Engineering Manual**: Accompanied by a 3,000+ line UI design and implementation manual: [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md).
 
 ---
 
 ## 📚 Complete Technical Manual (Seven Volumes)
 
-The crown jewel of this repository is the exhaustive 3,000+ line, 31-chapter reverse engineering manual: [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md).
+The repository ships with a 3,000+ line, 31-chapter UI design and implementation manual: [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md).
 
-It documents exact decompilation evidence locations alongside Anthropic's architectural solutions for modern LLM client engineering hurdles:
+It is split into seven parts covering design tokens, atomic controls, the conversation stream, motion, multimedia, desktop interaction, and engineering setup:
 
 ### 📖 Part 1: Design Philosophy & Design Token System
 * **[1.1 Design Philosophy & Visual Tone](docs/01-设计哲学与设计令牌体系.md#11-设计哲学与视觉调性)**: Editorial Warmth, 4-tier micro-contrast surfaces, and lightweight, high-frame-rate motion.
@@ -93,13 +90,13 @@ It documents exact decompilation evidence locations alongside Anthropic's archit
 ### ⚡ Part 4: Motion Physics, Shaders & Ambient Atmosphere
 * **[4.1 Complete Motion Engine & Keyframe Specifications](docs/04-动效物理学、着色器与环境光影.md#41-全量动效引擎与关键帧规范)**: Exact mathematical analytical solutions for second-order damped harmonic oscillators, 4 production spring presets, and core `@keyframes`.
 * **[4.2 Dynamic Light Effects, Shaders & Reasoning Atmosphere](docs/04-动效物理学、着色器与环境光影.md#42-动态光效着色器与推理氛围感)**: `wl-glow` warm Clay diffuse light field, `cds-shimmer-text-shine` asymmetric bezier sweep, and caustic light field.
-* **[4.3 Smooth Scroll Edge Alpha Mask System](docs/04-动效物理学、着色器与环境光影.md#43-滚动边缘平滑渐变遮罩系统)**: Official 7-stop quintic ease non-linear alpha gradient mask with dynamic scroll sensors (zeroing at edges).
+* **[4.3 Smooth Scroll Edge Alpha Mask System](docs/04-动效物理学、着色器与环境光影.md#43-滚动边缘平滑渐变遮罩系统)**: 7-stop quintic ease non-linear alpha gradient mask with dynamic scroll sensors (zeroing at edges).
 
 ### 🎨 Part 5: Audiovisual Multimedia & Artifact Interaction Physics
-* **[5.1 Voice Mode & Web Audio Physical Acoustics System](docs/05-视听多媒体与产物交互物理学.md#51-语音模式与-web-audio-物理声学系统)**: Procedural Web Audio API oscillator synthesis, 30% soothing gain standard, and 6-band non-linear gamma spectrum bars (with decompiled AudioWorklet architecture analysis).
+* **[5.1 Voice Mode & Web Audio Physical Acoustics System](docs/05-视听多媒体与产物交互物理学.md#51-语音模式与-web-audio-物理声学系统)**: Procedural Web Audio API oscillator synthesis, 30% soothing gain standard, and 6-band non-linear gamma spectrum bars.
 * **[5.2 Multimodal Media Viewer & Gallery Runway Physics](docs/05-视听多媒体与产物交互物理学.md#52-多模态媒体查看器与画廊转场物理学)**: View Transitions shared-element morphing, cursor-anchored infinite pan/zoom affine equations, and 75vw runway viewport.
 * **[5.3 Split Pane Resizing & Collapsing Physics](docs/05-视听多媒体与产物交互物理学.md#53-双栏弹性分割与折叠物理学)**: Iframe pointer shield, 4px deadzone, double-click 50/50 spring snap, collapse thresholds, and geometric clamping.
-* **[5.4 Artifact Preview Sandbox & Isolated IPC Architecture](docs/05-视听多媒体与产物交互物理学.md#54-工件预览沙箱与隔离通信架构)**: Epitaxy isolated container, 7 proprietary MIME dispatchers, user-gesture gating, and virtual package redirection.
+* **[5.4 Artifact Preview Sandbox & Isolated IPC Architecture](docs/05-视听多媒体与产物交互物理学.md#54-工件预览沙箱与隔离通信架构)**: Epitaxy isolated container, 7 MIME dispatchers, user-gesture gating, and virtual package redirection.
 * **[5.5 Streaming Code Diff Viewer & Syntax Highlighting Engine](docs/05-视听多媒体与产物交互物理学.md#55-代码差异对比与多线程语法高亮系统)**: Shadow DOM boundary isolation, CSS Grid line-height lock, incremental streaming pipeline, and unified/split dual viewing modes.
 
 ### 🖥️ Part 6: System-Level Desktop Architecture & Collaboration Topology
@@ -119,20 +116,16 @@ It documents exact decompilation evidence locations alongside Anthropic's archit
 ### 🤖 Part 8: AI Agent Frontend UI & Motion Guidelines
 * **[8.1~8.7 Agent Roles, Design Token Contracts & Spring Decision Tree](docs/08-AI-Agent-前端-UI-与动效开发指南.md)**: Standardized guidelines for AI Coding Agents to implement pixel-perfect CDS components.
 
-### 🚀 Part 9: Claude Desktop 2.0 (v2.37337.1) Comprehensive Reverse Engineering Analysis
-* **[9.1~9.6 Topology Restructuring, Popout Multi-Window, 10 Critical Bug Sweeps & Managed Configuration Breaking Changes](docs/09-Claude-Desktop-2.0-全量版本更新深度逆向分析.md)**: Industry-first architectural decompilation report for Claude Desktop 2.0.
-
 ---
 
-## 🔬 Decompiled Algorithms & Engineering Physics
+## 🎛️ Interaction Details
 
-UI components are merely the presentation layer. **What truly sets Claude's interaction quality apart are the mathematical models and physics equations buried beneath minified production code**. This repository decompiled and faithfully recreated 8 core algorithms:
+UI components are only the presentation layer. What shapes interaction quality is the math and physics underneath. These 8 details are the ones this project polishes most:
 
 ### 1. 7-Stop Non-Linear Alpha Gradient Fade Mask
 * **The Problem**: Conventional two-stop linear scroll masks cause harsh color banding and jarring geometric cutoffs on high-DPI Retina displays.
-* **Claude's Algorithm**: Discards blunt linear cuts in favor of 7 non-linear gradient stops across the fade distance (15% position with 5.1% alpha `#0d`, 30% with 14.9% `#26`, 45% with 30.2% `#4d`, 60% with 50.2% `#80`, 75% with 70.2% `#b3`, 87% with 85.1% `#d9`, closely tracking a $y \approx x^{1.5}$ power curve), dynamically zeroed out by scroll boundary sensors at the top and bottom:
+* **Approach**: Discards blunt linear cuts in favor of 7 non-linear gradient stops across the fade distance (15% position with 5.1% alpha `#0d`, 30% with 14.9% `#26`, 45% with 30.2% `#4d`, 60% with 50.2% `#80`, 75% with 70.2% `#b3`, 87% with 85.1% `#d9`, closely tracking a $y \approx x^{1.5}$ power curve), dynamically zeroed out by scroll boundary sensors at the top and bottom:
 ```css
-/* Extracted from production bundle c6a992d55-C0zTICcS.css */
 mask-image: linear-gradient(to bottom,
   transparent,
   #0000000d calc(var(--cds-scroll-fade-top) * .15),
@@ -155,35 +148,35 @@ mask-image: linear-gradient(to bottom,
 
 ### 2. Microphone 8% Noise Floor Gating & Procedural Web Audio Engine (Noise Floor Gating & Synthetic SFX)
 * **The Problem**: Ambient room noise (e.g. AC rumble) causes voice visualizers to jitter during silence; additionally, external MP3 audio assets introduce download latency and audio popping on abrupt interruption.
-* **Claude's Algorithm**: First, introduces an 8% noise floor gate (`NOISE_FLOOR = 0.08`) to cut out ambient hum before rendering voice bars; second, synthesizes pleasant interaction chimes using native Web Audio `OscillatorNode` with frequency ramps (e.g. 440Hz → 880Hz) and anti-pop exponential gain ramp smoothing, requiring zero external audio assets.
+* **Approach**: First, introduces an 8% noise floor gate (`NOISE_FLOOR = 0.08`) to cut out ambient hum before rendering voice bars; second, synthesizes pleasant interaction chimes using native Web Audio `OscillatorNode` with frequency ramps (e.g. 440Hz → 880Hz) and anti-pop exponential gain ramp smoothing, requiring zero external audio assets.
 
 ### 3. CJK IME Composition Double-Interlock Guard
 * **The Problem**: When Chinese, Japanese, or Korean users press Enter on an IME candidate floating list to confirm phonetic characters, the unfinished message is erroneously sent.
-* **Claude's Algorithm**: Establishes a double-interlock guard checking `!(e.nativeEvent.isComposing || e.keyCode === 229)`, while intercepting `Escape` events inside an event state machine to prevent accidental dialog dismissals when closing candidate palettes.
+* **Approach**: Establishes a double-interlock guard checking `!(e.nativeEvent.isComposing || e.keyCode === 229)`, while intercepting `Escape` events inside an event state machine to prevent accidental dialog dismissals when closing candidate palettes.
 
 ### 4. 150ms Scroll Pinning Cooldown Latch & 40px Tolerance
 * **The Problem**: While streaming large volumes of tokens, users who scroll up to review previous messages are aggressively dragged back to the bottom.
-* **Claude's Algorithm**: Couples a 40px bottom-tolerance scroll pin with a 150ms manual scroll cooldown latch. Once an intentional upward scroll is detected, auto-scrolling is locked out for 150ms, permanently eliminating "scroll viewport hijacking".
+* **Approach**: Couples a 40px bottom-tolerance scroll pin with a 150ms manual scroll cooldown latch. Once an intentional upward scroll is detected, auto-scrolling is locked out for 150ms, permanently eliminating "scroll viewport hijacking".
 
 ### 5. Cursor-Anchored Affine Pan/Zoom Equation
 * **The Problem**: Standard gallery viewers zoom relative to viewport center, pushing the specific detail under the user's cursor off-screen.
-* **Claude's Algorithm**: Treats the pointer $(O_x, O_y)$ as an invariant physical anchor in screen space, solving the affine transformation matrix:
+* **Approach**: Treats the pointer $(O_x, O_y)$ as an invariant physical anchor in screen space, solving the affine transformation matrix:
 $$\text{idealTx} = O_x - (O_x - \text{prevTx}) \cdot \frac{S_{\text{target}}}{S_{\text{current}}}$$
 Integrated with a 4px hand-tremor deadzone and viewport boundary overflow damping ($y = 0.7$).
 
 ### 6. Microphone 6-Band Non-Linear Gamma 0.7 Power Compression
 * **The Problem**: Linearly mapping decibels to bar height causes bass clipping, while ambient room noise (e.g., air conditioning) causes jitter during speech pauses.
-* **Claude's Algorithm**: Introduces an 8% noise floor gate, followed by a 0.7-power non-linear Gamma curve:
+* **Approach**: Introduces an 8% noise floor gate, followed by a 0.7-power non-linear Gamma curve:
 $$\text{Compressed} = \min\left(1, (\max(0, E - 0.08) / 0.92)^{0.7} \times 1.5 \times W_b\right)$$
 Gently boosting quiet vocal nuances while curbing peak saturation for a silky, balanced audio visualizer.
 
 ### 7. Shadow DOM Isolation + CSS Grid Line-Height Geometric Hard-Lock
 * **The Problem**: In code diff viewers with long line wrapping, line numbers on the left frequently fall out of vertical alignment with code lines on the right.
-* **Claude's Algorithm**: Employs Shadow DOM encapsulation to shield token styles, while enforcing identical CSS Grid row spans on both sides (`gridRow = span ${lines}`). Sends incremental deltas to Web Workers via `feed: e.slice(m.length)`, avoiding $O(N^2)$ full-tree syntax reflows.
+* **Approach**: Employs Shadow DOM encapsulation to shield token styles, while enforcing identical CSS Grid row spans on both sides (`gridRow = span ${lines}`). Sends incremental deltas to Web Workers via `feed: e.slice(m.length)`, avoiding $O(N^2)$ full-tree syntax reflows.
 
 ### 8. Iframe Pointer Event Shield & Double-Click 50/50 Spring Snap
 * **The Problem**: When resizing split panes over an embedded Artifact iframe, the iframe captures pointer events, causing resize dragging to lock up.
-* **Claude's Algorithm**: Injects `data-pane-dragging="true"` onto the root upon drag initiation, overlaying an invisible `pointer-events: none` shield above the iframe; double-clicking the splitter handle triggers a second-order spring transition that snaps the panes to a precise 50/50 split.
+* **Approach**: Injects `data-pane-dragging="true"` onto the root upon drag initiation, overlaying an invisible `pointer-events: none` shield above the iframe; double-clicking the splitter handle triggers a second-order spring transition that snaps the panes to a precise 50/50 split.
 
 ---
 
@@ -242,7 +235,7 @@ open-claude-ui/
 
 ## 🧩 Component & Physics Directory
 
-| Category | Component / Hook | Decompiled Origin & Engineering Physics |
+| Category | Component / Hook | Engineering Notes |
 | :--- | :--- | :--- |
 | **Atomic Controls** | `CdsButton.tsx` | 4-tier size ladder (XS/SM/MD/LG), 5 variants, single-stroke border discipline, `active:scale-[0.98]`. |
 | **Atomic Controls** | `SegmentedControl.tsx` | 999px fully rounded pill track, 2px geometric padding, dual mode supporting CSS absolute positioning & Framer Motion. |
@@ -261,7 +254,7 @@ open-claude-ui/
 | **Audiovisual & Media** | `ClaudeAudioPlayer.ts` | Procedural Web Audio API oscillator synthesis, 30% gentle volume standard, anti-pop gain ramp smoothing. |
 | **Audiovisual & Media** | `LiveMicActivityBars.tsx` | 6-band full vocal coverage visualizer, 8% noise floor gate, `Math.pow(energy, 0.7)` non-linear Gamma compression. |
 | **Audiovisual & Media** | `MediaLightboxViewer.tsx` | 75vw runway viewport, cursor-anchored affine pan/zoom equation, 4px drag deadzone, Ctrl + wheel zooming. |
-| **Audiovisual & Media** | `useClaudeSharedElementTransition.ts` | Built on `startViewTransition`, dynamic corner radius detection, and `object-fit: contain` reverse clip computation. |
+| **Audiovisual & Media** | `useClaudeSharedElementTransition.ts` | Built on `startViewTransition`, dynamic corner radius detection, and `object-fit: contain` inner clip computation. |
 | **Audiovisual & Media** | `ArtifactsSplitPaneResizer.tsx` | Iframe pointer shield, 4px deadzone, double-click 50/50 spring snap, collapse thresholds, geometric clamping. |
 | **Audiovisual & Media** | `EpitaxyIframeBridge.tsx` | Strict Origin validation & channel-isolated postMessage RPC, 7 proprietary MIME handlers, user-gesture gating. |
 | **Audiovisual & Media** | `StreamingDiffViewer.tsx` | Table line-number alignment with `tabular-nums`, incremental streaming pipeline, unified/split view switching, 2.5s copy cooldown. |
@@ -367,7 +360,7 @@ The storybook includes:
 This repository includes first-class development specifications tailored for modern AI Coding Agents (such as Cursor, Windsurf, Claude Code, GitHub Copilot, Devin, Antigravity, etc.):
 
 * **Universal Agent Guidelines**: [`AGENTS.md`](AGENTS.md) (Loaded automatically in repository root, covering semantic design tokens, the 4-tier spring preset matrix, single-stroke border discipline, IME guards, and verification gates).
-* **Claude Code Instructions**: [`CLAUDE.md`](CLAUDE.md) (Dedicated CLI commands and conventions for Anthropic's Claude Code toolchain).
+* **Claude Code Instructions**: [`CLAUDE.md`](CLAUDE.md) (Dedicated CLI commands and conventions for the Claude Code toolchain).
 * **IDE Agent Rules**: [`.cursorrules`](.cursorrules) and [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
 
 > 💡 **Tip for developers using AI assistants**:  
@@ -378,11 +371,11 @@ This repository includes first-class development specifications tailored for mod
 
 ## 🙏 Acknowledgements
 
-* Special thanks to the open-source reverse engineering framework **[REA (Reverse Engineer Anything)](https://github.com/morluto/rea)** for providing the AST deconstruction, Electron runtime analysis, and engineering constant decompilation toolchain that made this project possible.
-* Deep appreciation to the Anthropic design and front-end engineering teams for crafting an editorial-grade interaction system and meticulous engineering details that inspired this clean-room study.
+* The Claude desktop app's interface design and interaction details were a big inspiration for this project.
+* This repository is a fork of [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui). Thanks to the original author.
 
 ---
 
 ## 📜 License
 
-Distributed under the [MIT License](LICENSE). All decompiled research findings and code reproductions are intended solely for educational, research, and engineering exchange purposes.
+Distributed under the [MIT License](LICENSE). This project is intended solely for educational, research, and engineering exchange purposes.

@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>基于 REA 深度拆解，高保真生产级还原 Claude 设计系统 (CDS) 与工程交互物理学。</strong>
+  <strong>一套受 Claude 桌面端启发的 React UI 分享：设计令牌、组件代码与交互动效细节。</strong>
 </p>
 
 <p align="center">
@@ -14,8 +14,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
-  <a href="https://github.com/morluto/rea"><img src="https://img.shields.io/badge/Reverse%20Engineered%20with-REA-ea580c?logo=github" alt="Reverse Engineered with REA" /></a>
-  <a href="assets/README.md"><img src="https://img.shields.io/badge/assets-clean--room%20compliance-success" alt="Asset Compliance" /></a>
+  <a href="assets/README.md"><img src="https://img.shields.io/badge/assets-no%20proprietary%20binaries-success" alt="Asset Policy" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.5+-blue?logo=typescript" alt="TypeScript" /></a>
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React" /></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-3.4+-38B2AC?logo=tailwind-css" alt="TailwindCSS" /></a>
@@ -26,17 +25,15 @@
 
 ## 📖 简介 (Introduction)
 
-`open-claude-ui` 是基于对现代桌面端 AI 客户端进行深度拆解与逆向分析构建的高保真开源 UI 组件库与动效引擎。
+`open-claude-ui` 是一个 **UI 分享项目**：收集了 30 个独立的 React 组件与动效 Hook，围绕温润的陶土色调、克制的交互物理，以及输入框、滚动、拖拽等细节手感，适合作为构建 AI 对话类产品界面的参考与素材，复制即用。
 
-整个逆向推导、反混淆静态分析与 ASAR 资源解构，均依托于先进的多平台逆向工程框架 **[REA (Reverse Engineer Anything)](https://github.com/morluto/rea)** 完成——通过 REA 的静态 AST 解析、闭包代码反混淆与运行时跟踪能力，穿透生产级压缩包，精准还原了底层工程物理常数与数学模型。
-
-不同于市面上常见的盲猜或近似复刻，本项目所有组件规范、物理阻尼常数、着色器关键帧及音频管道均**严格依据真实前端架构反编译验证**提炼而成：
+本项目的组件规范、动效参数、关键帧与音频管线都整理成了可直接阅读和复用的代码与文档：
 * **温润的人文质感 (Editorial Warmth)**：纯正陶土橙（Clay `#d97757`）、4 层微对比表面阶梯（Surface 0-3）与视网膜高分屏发丝细边补偿（Hairline Ring）；
 * **严苛的交互物理学 (Interaction Physics)**：4 套生产级物理弹簧参数调校、4px 指针移动死区、CJK 输入法合成守卫、7 档渐隐非线性 Alpha 遮罩；
 * **高阶视听与系统架构 (Audiovisual & Architecture)**：基于原生 Web Audio API 的零延迟合成提示音、以光标为锚点的画廊跑道平移缩放、macOS 桌面毛玻璃透明融合与 Cowork 多代理协同拓扑。
 
-> ⚖️ **版权与合规声明 (DMCA & Assets Policy)**：  
-> 本开源项目**不公开分发任何专有二进制资产**（包括商业字体 `.ttf` 与录音 `.mp3`）。本项目提供原生系统级字体回退栈与 Web Audio API 纯代码合成音效，完全自包含、合规安全。详情参见 [assets/README.md](assets/README.md)。
+> ⚖️ **非官方声明与资产说明**：  
+> 本项目为非官方 UI 分享，与 Anthropic, PBC 无任何隶属或合作关系；Claude 及相关名称、标识归其各自权利人所有。本项目**不分发任何专有二进制资产**（包括商业字体 `.ttf` 与录音 `.mp3`），提供系统级字体回退栈与 Web Audio API 纯代码合成音效，完全自包含。详情参见 [assets/README.md](assets/README.md)。
 
 ---
 
@@ -58,15 +55,15 @@ graph TD
 1. **30 个生产级独立代码模块**：包含 11 个基础原子控件 + 19 个深度架构物理学模块与 React Hooks，即拷即用，零黑盒依赖。
 2. **纯原生系统级排版与音效**：支持系统高保真字体回退栈，内置基于 Web Audio 振荡器的零延迟提示音合成引擎。
 3. **交互式组件故事书 (Storybook Preview)**：内置单文件开箱即用的离线 Storybook，支持浏览器直接打开预览全部组件动效。
-4. **七大领域分卷完整技术手册**：附带深度逆向分析开发手册 [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md)。
+4. **七大领域分卷完整技术手册**：附带 UI 设计与实现手册 [`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md)。
 
 ---
 
-## 📚 七大篇章逆向分析手册 (Complete Technical Manual)
+## 📚 七大篇章设计与实现手册 (Complete Technical Manual)
 
-整个仓库最具工业价值的核心是这本长达 3,000+ 行、31 个核心子节的深度逆向工程手册：[`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md)。
+仓库附带一本 3,000+ 行、31 个子节的 UI 设计与实现手册：[`docs/Claude Design System (CDS).md`](docs/Claude%20Design%20System%20(CDS).md)。
 
-它不仅记录了所有反编译源码取证位置，还详尽解构了 Anthropic 解决当代大模型产品前端痛点的系统架构方案：
+手册按主题拆分为七个篇章，覆盖设计令牌、基础控件、会话流、动效、多媒体、桌面端交互与工程配置：
 
 ### 📖 第一篇：设计哲学与设计令牌体系
 * **[1.1 设计哲学与视觉调性](docs/01-设计哲学与设计令牌体系.md#11-设计哲学与视觉调性)**：温润的人文质感（Editorial Warmth）、四层低对比表面微阶梯、高帧率轻负担动效。
@@ -93,13 +90,13 @@ graph TD
 ### ⚡ 第四篇：动效物理学、着色器与环境光影
 * **[4.1 全量动效引擎与关键帧规范](docs/04-动效物理学、着色器与环境光影.md#41-全量动效引擎与关键帧规范)**：4 套生产级物理弹簧参数矩阵调校及触感响应、核心 `@keyframes`。
 * **[4.2 动态光效、着色器与推理氛围感](docs/04-动效物理学、着色器与环境光影.md#42-动态光效着色器与推理氛围感)**：`wl-glow` 陶土暖光漫反射光场、`cds-shimmer-text-shine` 非对称贝塞尔曲线与焦散光场。
-* **[4.3 滚动边缘平滑渐变遮罩系统](docs/04-动效物理学、着色器与环境光影.md#43-滚动边缘平滑渐变遮罩系统)**：官方 7 档非线性 Alpha 渐变遮罩、动态滚动位置传感器（触顶/触底动态归零）。
+* **[4.3 滚动边缘平滑渐变遮罩系统](docs/04-动效物理学、着色器与环境光影.md#43-滚动边缘平滑渐变遮罩系统)**：7 档非线性 Alpha 渐变遮罩、动态滚动位置传感器（触顶/触底动态归零）。
 
 ### 🎨 第五篇：视听多媒体与产物交互物理学
-* **[5.1 语音模式与 Web Audio 物理声学系统](docs/05-视听多媒体与产物交互物理学.md#51-语音模式与-web-audio-物理声学系统)**：原生 Web Audio 振荡器无损合成音效、30% 舒缓音量标准、6 频段非线性 Gamma 波形柱（附官方 AudioWorklet 架构逆向解密）。
+* **[5.1 语音模式与 Web Audio 物理声学系统](docs/05-视听多媒体与产物交互物理学.md#51-语音模式与-web-audio-物理声学系统)**：原生 Web Audio 振荡器无损合成音效、30% 舒缓音量标准、6 频段非线性 Gamma 波形柱。
 * **[5.2 多模态媒体查看器与画廊转场物理学](docs/05-视听多媒体与产物交互物理学.md#52-多模态媒体查看器与画廊转场物理学)**：View Transitions 共享元素变形、以光标为锚点的无级 Pan/Zoom 仿射方程、75vw 跑道视口。
 * **[5.3 双栏弹性分割与折叠物理学](docs/05-视听多媒体与产物交互物理学.md#53-双栏弹性分割与折叠物理学)**：Iframe 事件防吞噬护盾、4px 移动死区、双击 50/50 吸附、边缘折叠门限与约束钳制。
-* **[5.4 工件预览沙箱与隔离通信架构](docs/05-视听多媒体与产物交互物理学.md#54-工件预览沙箱与隔离通信架构)**：Epitaxy 隔离容器、7 大专有 MIME 分发、用户手势门禁与虚拟包重定向。
+* **[5.4 工件预览沙箱与隔离通信架构](docs/05-视听多媒体与产物交互物理学.md#54-工件预览沙箱与隔离通信架构)**：Epitaxy 隔离容器、7 类 MIME 分发、用户手势门禁与虚拟包重定向。
 * **[5.5 代码差异对比与多线程语法高亮系统](docs/05-视听多媒体与产物交互物理学.md#55-代码差异对比与多线程语法高亮系统)**：Shadow DOM 隔离、CSS Grid 行高对齐锁定、增量流式追加管道、统一/分屏双模式。
 
 ### 🖥️ 第六篇：系统级桌面架构与协作拓扑
@@ -119,20 +116,16 @@ graph TD
 ### 🤖 第八篇：AI Agent 前端 UI 与动效开发指南
 * **[8.1~8.7 Agent 角色定位、设计令牌契约与弹簧决策树](docs/08-AI-Agent-前端-UI-与动效开发指南.md)**：专为 AI Agent 定制的前端 UI 与动效装配自检指南。
 
-### 🚀 第九篇：Claude Desktop 2.0 (v2.37337.1) 全量版本更新深度逆向分析
-* **[9.1~9.6 界面拓扑骤变、Popout 多窗口架构、十大 Bug 清洗与托管配置迁移](docs/09-Claude-Desktop-2.0-全量版本更新深度逆向分析.md)**：Claude Desktop 2.0 全网首发深度逆向架构演进分析。
-
 ---
 
-## 🔬 逆向解密的 8 大硬核算法与工程物理学 (Decompiled Algorithms & Physics)
+## 🎛️ 8 个交互细节 (Interaction Details)
 
-UI 组件只是外壳，**真正让 Claude 交互质感脱颖而出的是隐藏在混淆代码底部的物理学方程与数学模型**。本项目从生产环境反编译还原了以下 8 项关键算法：
+UI 组件只是外壳，真正决定交互质感的是背后的物理与数学模型。以下 8 个细节是本项目重点打磨的部分：
 
 ### 1. 7 档渐隐非线性透明度遮罩 (7-Stop Non-Linear Fade Mask)
 * **痛点**：常规双色线性滚动遮罩在视网膜高分屏上存在严重的色阶断层（Color Banding）与生硬切断感。
-* **Claude 算法**：没有采用粗暴的线性双色切线，而是在羽化距离内采用 7 档非线性采样阶梯（采样位置 15% 处对应 Alpha 5.1% `#0d`、30% 处 14.9% `#26`、45% 处 30.2% `#4d`、60% 处 50.2% `#80`、75% 处 70.2% `#b3`、87% 处 85.1% `#d9`，曲线紧密贴合 $y \approx x^{1.5}$ 幂律感知感知模型），搭配触顶/触底动态归零传感器，呈现温润如沉入水雾的边缘渐隐：
+* **实现思路**：没有采用粗暴的线性双色切线，而是在羽化距离内采用 7 档非线性采样阶梯（采样位置 15% 处对应 Alpha 5.1% `#0d`、30% 处 14.9% `#26`、45% 处 30.2% `#4d`、60% 处 50.2% `#80`、75% 处 70.2% `#b3`、87% 处 85.1% `#d9`，曲线紧密贴合 $y \approx x^{1.5}$ 幂律感知感知模型），搭配触顶/触底动态归零传感器，呈现温润如沉入水雾的边缘渐隐：
 ```css
-/* 提取自 c6a992d55-C0zTICcS.css */
 mask-image: linear-gradient(to bottom,
   transparent,
   #0000000d calc(var(--cds-scroll-fade-top) * .15),
@@ -155,35 +148,35 @@ mask-image: linear-gradient(to bottom,
 
 ### 2. 麦克风 8% 底噪门限截断与原生 Web Audio 振荡器无损合成 (Noise Floor Gating & Synthetic SFX)
 * **痛点**：语音会话模式中空调等环境底噪容易导致波形持续微震抽搐；同时传统 Web 音效加载外部 MP3 有网络延迟并伴随切断爆音。
-* **Claude 算法**：一是引入 8% 噪声门限过滤（`NOISE_FLOOR = 0.08`）物理截断底噪；二是基于原生 Web Audio `OscillatorNode` 进行纯代码频率调制（如 440Hz → 880Hz 上扬）与平滑指数淡入淡出（`exponentialRampToValueAtTime`），零外部音频依赖且彻底消除爆音。
+* **实现思路**：一是引入 8% 噪声门限过滤（`NOISE_FLOOR = 0.08`）物理截断底噪；二是基于原生 Web Audio `OscillatorNode` 进行纯代码频率调制（如 440Hz → 880Hz 上扬）与平滑指数淡入淡出（`exponentialRampToValueAtTime`），零外部音频依赖且彻底消除爆音。
 
 ### 3. CJK 输入法合成双重互锁守卫 (IME Composition Guard)
 * **痛点**：中日韩用户在拼音/假名输入法候选词浮层敲击 Enter 键确认汉字时，消息被粗暴误发送。
-* **Claude 算法**：构建 `!(e.nativeEvent.isComposing || e.keyCode === 229)` 双重互锁守卫，并在按键拦截状态机中接管 `Escape` 键，防止候选词关闭时意外冒泡退避整个对话窗口。
+* **实现思路**：构建 `!(e.nativeEvent.isComposing || e.keyCode === 229)` 双重互锁守卫，并在按键拦截状态机中接管 `Escape` 键，防止候选词关闭时意外冒泡退避整个对话窗口。
 
 ### 4. 150ms 冷却时间戳防抢夺视口图钉 (Scroll Pinning Cooldown)
 * **痛点**：流式 Token 生成时，用户向上滚动查阅历史消息，会被源源不断的生成内容强制拉回底部。
-* **Claude 算法**：建立 40px 底部容差图钉锁定 + 150ms 人工滚动冷却时间戳机制。用户一旦主动向上微移视口，系统立即锁定滚动权限 150ms，彻底杜绝“自动滚动抢夺屏幕”。
+* **实现思路**：建立 40px 底部容差图钉锁定 + 150ms 人工滚动冷却时间戳机制。用户一旦主动向上微移视口，系统立即锁定滚动权限 150ms，彻底杜绝“自动滚动抢夺屏幕”。
 
 ### 5. 以鼠标光标为物理不动点的仿射 Pan/Zoom 方程
 * **痛点**：普通画廊放大图片时以视口中心为原点，导致鼠标想查看的细节区域被推离屏幕。
-* **Claude 算法**：将光标指针 $(O_x, O_y)$ 视为物理世界不变不动点，解算仿射变换矩阵：
+* **实现思路**：将光标指针 $(O_x, O_y)$ 视为物理世界不变不动点，解算仿射变换矩阵：
 $$\text{idealTx} = O_x - (O_x - \text{prevTx}) \cdot \frac{S_{\text{target}}}{S_{\text{current}}}$$
 配合 4px 手部微抖死区与视口边界溢出阻尼系数 ($y = 0.7$)。
 
 ### 6. 麦克风 6 频段非线性 Gamma 幂律能量压缩
 * **痛点**：直接将分贝映射为波形高度会导致低音爆格、说话停顿时空调噪音引起持续微抖。
-* **Claude 算法**：引入 8% 噪声门限过滤底噪，叠加 0.7 次幂非线性 Gamma 压缩：
+* **实现思路**：引入 8% 噪声门限过滤底噪，叠加 0.7 次幂非线性 Gamma 压缩：
 $$\text{Compressed} = \min\left(1, (\max(0, E - 0.08) / 0.92)^{0.7} \times 1.5 \times W_b\right)$$
 使微弱的人声细语被温和放大，高分贝爆音被自然平抑，波形动态范围极其均匀。
 
 ### 7. Shadow DOM 隔离 + CSS Grid 行高几何硬锁
 * **痛点**：代码差异对比引擎在遇到长行换行（Word Wrap）时，左侧行号与右侧代码经常严重错位。
-* **Claude 算法**：采用 Shadow DOM 隔离语法选择器，左右两栏在 CSS Grid 中被强制同步硬锁为相同网格行跨度：`gridRow = span ${lines}`，并使用 `feed: e.slice(m.length)` 增量向 Worker 发送 Delta，避免 $O(N^2)$ 重复语法树重排。
+* **实现思路**：采用 Shadow DOM 隔离语法选择器，左右两栏在 CSS Grid 中被强制同步硬锁为相同网格行跨度：`gridRow = span ${lines}`，并使用 `feed: e.slice(m.length)` 增量向 Worker 发送 Delta，避免 $O(N^2)$ 重复语法树重排。
 
 ### 8. Iframe 事件防吞噬护盾与双击 50/50 吸附
 * **痛点**：拖拽 Artifacts 双栏分割条划过内部展示 iframe 时，iframe 截获指针事件导致拖拽状态死锁卡住。
-* **Claude 算法**：拖拽激活瞬间向全局注入 `data-pane-dragging="true"`，在预览容器上方强制覆盖一层透明的 `pointer-events: none` 阻断层；双击手柄瞬时触发二阶弹簧 50/50 平分居中吸附。
+* **实现思路**：拖拽激活瞬间向全局注入 `data-pane-dragging="true"`，在预览容器上方强制覆盖一层透明的 `pointer-events: none` 阻断层；双击手柄瞬时触发二阶弹簧 50/50 平分居中吸附。
 
 ---
 
@@ -241,7 +234,7 @@ open-claude-ui/
 
 ## 🧩 生产级组件与物理模块总览 (Component Directory)
 
-| 模块分类 | 组件 / Hook 文件 | 逆向来源与工程机制 |
+| 模块分类 | 组件 / Hook 文件 | 工程机制 |
 | :--- | :--- | :--- |
 | **基础原子控件** | `CdsButton.tsx` | 4 级尺寸阶梯（XS/SM/MD/LG），5 大变体，单闭合边框原则，`active:scale-[0.98]`。 |
 | **基础原子控件** | `SegmentedControl.tsx` | 999px 全圆角轨道、2px 几何内边距、纯几何定位与 Framer Motion 双模式。 |
@@ -260,7 +253,7 @@ open-claude-ui/
 | **视听与多模态** | `ClaudeAudioPlayer.ts` | 原生 Web Audio API 振荡器无损和弦合成、30% 舒缓音量标准、平滑增益淡入淡出防爆音。 |
 | **视听与多模态** | `LiveMicActivityBars.tsx` | 6 频段人声全覆盖波形、8% 噪声门限过滤、`Math.pow(energy, 0.7)` 非线性 Gamma 压缩。 |
 | **视听与多模态** | `MediaLightboxViewer.tsx` | 75vw 跑道滑动位移、以光标为锚点的仿射平移缩放（Pan/Zoom）、4px 拖拽死区、Ctrl 滚轮缩放。 |
-| **视听与多模态** | `useClaudeSharedElementTransition.ts` | 基于 `startViewTransition`、缩略图动态圆角检测与 `object-fit: contain` 内切剪裁逆向计算。 |
+| **视听与多模态** | `useClaudeSharedElementTransition.ts` | 基于 `startViewTransition`、缩略图动态圆角检测与 `object-fit: contain` 内切剪裁计算。 |
 | **视听与多模态** | `ArtifactsSplitPaneResizer.tsx` | Iframe 事件防吞噬护盾、4px 移动死区、双击 50/50 居中吸附、边缘折叠门限与约束钳制。 |
 | **视听与多模态** | `EpitaxyIframeBridge.tsx` | 严格 Origin 校验与通道隔离的 postMessage RPC 协议、7 大专有 MIME 分发、用户激活门禁。 |
 | **视听与多模态** | `StreamingDiffViewer.tsx` | 表格行号对齐与 `tabular-nums` 约束、增量流式追加管道、统一/分屏双模式切换与 2.5s 复制衰减状态机。 |
@@ -365,7 +358,7 @@ open docs/claude-components-storybook.html
 本项目针对现代 AI Coding Agents（如 Cursor, Windsurf, Claude Code, GitHub Copilot, Devin, Antigravity 等）深度适配了前端 UI 与动效开发指引规范：
 
 * **全局 Agent 规范指南**：[`AGENTS.md`](AGENTS.md)（根目录自动生效，包含设计令牌、物理弹簧选型矩阵、单闭合边框原则、输入法防御守卫与质量门禁）。
-* **Claude Code 专用指引**：[`CLAUDE.md`](CLAUDE.md)（针对 Anthropic 官方 CLI 工具链的指令与开发约束）。
+* **Claude Code 专用指引**：[`CLAUDE.md`](CLAUDE.md)（针对 Claude Code CLI 工具链的指令与开发约束）。
 * **IDE Agent 规则**：[`.cursorrules`](.cursorrules) 与 [`.github/copilot-instructions.md`](.github/copilot-instructions.md)。
 
 > 💡 **给使用 AI 助手的开发者提示**：  
@@ -374,13 +367,13 @@ open docs/claude-components-storybook.html
 
 ---
 
-## 🙏 致谢与逆向支持 (Acknowledgements)
+## 🙏 致谢 (Acknowledgements)
 
-* 特别鸣谢开源逆向框架 **[REA (Reverse Engineer Anything)](https://github.com/morluto/rea)** 为本项目提供的 AST 解密、Electron 运行时分析与工程常数反编译工具链支持。
-* 致敬 Anthropic 设计与前端团队打造的人文级交互系统与工程细节，启发了本开源复现研究。
+* Claude 桌面端的界面设计与交互细节给了本项目许多灵感。
+* 本仓库 Fork 自 [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui)，感谢原作者的工作。
 
 ---
 
 ## 📜 许可证 (License)
 
-本项目基于 [MIT License](LICENSE) 开源发布。所有反编译研究成果与代码复现仅供学习、研究与工程交流使用。
+本项目基于 [MIT License](LICENSE) 开源发布。本项目仅供学习、研究与工程交流使用。

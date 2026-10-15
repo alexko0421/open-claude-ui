@@ -1,7 +1,7 @@
 /**
  * Open Claude UI (open-claude-ui)
- * Clean-room reverse-engineered implementation of the Claude Design System (CDS).
- * High-fidelity components, physics-based motion presets, and architectural hooks.
+ * A UI share inspired by the Claude desktop app (Claude Design System, CDS).
+ * Components, physics-based motion presets, and interaction hooks.
  */
 
 // 1. Foundational Atoms & Controls

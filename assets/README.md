@@ -1,8 +1,8 @@
 # Assets & Compliance Policy
 
-## ⚖️ 开源资产与版权合规声明 (DMCA & Asset Policy)
+## ⚖️ 资产说明 (Asset Policy)
 
-为了遵守开源软件规范及 DMCA / 知识产权法律，`open-claude-ui` **不公开分发任何属于 Anthropic, PBC 的专有二进制资产**（包括但不限于商业可变字体文件 `.ttf`、语音模式对话录音 `.mp3` 以及官方商业标识）。
+`open-claude-ui` 是非官方的 UI 分享项目，**不分发任何专有二进制资产**（包括但不限于商业可变字体文件 `.ttf`、语音录音 `.mp3` 以及商业标识）。
 
 ### 1. 字体解决方案 (Font Stack Policy)
 本项目组件已全量配置系统级高保真字体回退栈，无需下载任何专有商业字体文件即可完美呈现优雅排版：
